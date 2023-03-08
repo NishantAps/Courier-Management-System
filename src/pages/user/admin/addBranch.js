@@ -26,6 +26,7 @@ axios.defaults.headers.common["Authorization"] = "Bearer " + token;
       toast.error('please enter pincode')
     }  else {
       // make the API call to check if user exists
+      // First commit
       axios
         .post(config.serverURL + '/admin/addBranch', {
             branchName,
